@@ -79,7 +79,7 @@ tanto por su precio como por sus beneficios clínicos, sociales y emocionales.
 # ------------------------
 # INTERFAZ
 # ------------------------
-st.title("🤖♿ Chatbot Lázaro - Demo")
+st.title("🤖♿ Chatbot Lázaro")
 st.write("""Hola! Soy Patri del equipo Lázaro. Dime ¿en qué puedo ayudarte hoy?""")
 
 # Historial de chat
