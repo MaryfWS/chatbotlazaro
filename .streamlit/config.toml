@@ -1,7 +1,7 @@
 [theme]
 backgroundColor = "orange"
-primaryColor = "#00BCC9"
-secondaryBackgroundColor = "#73d43fff"
+primaryColor = "#D4D1CB"
+secondaryBackgroundColor = "#CC5703"
 textColor = "#000000"
 
 # Puedes ajustar estos valores según prefieras
