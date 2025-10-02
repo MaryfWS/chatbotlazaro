@@ -1,5 +1,8 @@
 [theme]
 backgroundColor = "orange"
+primaryColor = "#00BCC9"
+secondaryBackgroundColor = "#D4D1CB"
+textColor = "#000000"
 
 # Puedes ajustar estos valores según prefieras
 # primaryColor: para botones y acentos
