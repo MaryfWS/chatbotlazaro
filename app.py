@@ -106,14 +106,18 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.write("👉 Preguntas rápidas:")
 col1, col2, col3 = st.columns(3)
+pregunta_rapida = None
 if col1.button("💲 ¿Precio?"):
-    user_input = "¿Cuál es el precio de la silla?"
+    pregunta_rapida = "¿Cuál es el precio de la silla?"
 elif col2.button("💡 Beneficios"):
-    user_input = "¿Qué beneficios tiene la silla bipedestadora?"
+    pregunta_rapida = "¿Qué beneficios tiene la silla bipedestadora?"
 elif col3.button("⚖️ Comparación"):
-    user_input = "¿Qué ventajas tiene frente a sillas importadas?"
-else:
-    user_input = st.chat_input("Escribe tu pregunta aquí...")
+    pregunta_rapida = "¿Qué ventajas tiene frente a sillas importadas?"
+
+user_input = st.chat_input("Escribe tu pregunta aquí...")
+
+if pregunta_rapida:
+    user_input = pregunta_rapida
 
 # ------------------------
 # CHAT
