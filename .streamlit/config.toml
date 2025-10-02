@@ -6,3 +6,6 @@ backgroundColor = "orange"
 # backgroundColor: fondo principal (anaranjado)
 # secondaryBackgroundColor: fondo de paneles/sidebars
 # textColor: color del texto
+[theme.sidebar]
+backgroundColor="ghostWhite"
+secondaryBackgroundColor="lavender"
