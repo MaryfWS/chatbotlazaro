@@ -2,7 +2,8 @@
 primaryColor = "#FCA70A"
 backgroundColor = "#CC5703"
 secondaryBackgroundColor = "#D4D1CB"
-textColor = "#929EA0"
+textColor = "#000000" # negro
+# Si prefieres letras blancas, cambia a: textColor = "#FFFFFF"
 
 # Puedes ajustar estos valores según prefieras
 # primaryColor: para botones y acentos
