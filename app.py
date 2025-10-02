@@ -59,6 +59,7 @@ ESTILO DE COMUNICACIÓN:
 
 OBJETIVO FINAL:
 Informar y persuadir al usuario de que la silla bipedestadora eléctrica es la mejor opción en Perú, tanto por su precio como por sus beneficios clínicos, sociales y emocionales.
+ojo tratar de diferenciar si habla un paciente/cliente/institucion, que no sea obvio que se quiere vender el producto sino que sea natural por sus beneficios
 """
 
 st.title("🤖 Chatbot Lázaro - Demo")
