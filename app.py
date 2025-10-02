@@ -62,7 +62,7 @@ Informar y persuadir al usuario de que la silla bipedestadora eléctrica es la m
 """
 
 st.title("🤖 Chatbot Lázaro - Demo")
-st.write("""Hola! Soy Patri del equipo Lázaro. Dime ¿en qué puedo ayudarte hoy?"""
+st.write("""Hola! Soy Patri del equipo Lázaro. Dime ¿en qué puedo ayudarte hoy?""")
 
 for msg in st.session_state.chat_history:
     with st.chat_message(msg["role"]):
