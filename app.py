@@ -109,9 +109,9 @@ col1, col2, col3 = st.columns(3)
 pregunta_rapida = None
 if col1.button("💲 ¿Precio?"):
     pregunta_rapida = "¿Cuál es el precio de la silla?"
-elif col2.button("💡 Beneficios"):
+if col2.button("💡 Beneficios"):
     pregunta_rapida = "¿Qué beneficios tiene la silla bipedestadora?"
-elif col3.button("⚖️ Comparación"):
+if col3.button("⚖️ Comparación"):
     pregunta_rapida = "¿Qué ventajas tiene frente a sillas importadas?"
 
 user_input = st.chat_input("Escribe tu pregunta aquí...")
