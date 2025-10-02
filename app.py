@@ -79,7 +79,7 @@ tanto por su precio como por sus beneficios clínicos, sociales y emocionales.
 # ------------------------
 # INTERFAZ
 # ------------------------
-st.title("🤖🪑♿ Chatbot Lázaro - Demo")
+st.title("🤖♿ Chatbot Lázaro - Demo")
 st.write("""Hola! Soy Patri del equipo Lázaro. Dime ¿en qué puedo ayudarte hoy?""")
 
 # Historial de chat
@@ -88,6 +88,22 @@ for msg in st.session_state.chat_history:
         st.markdown(msg["content"])
 
 # Preguntas rápidas
+st.markdown("""
+    <style>
+    div.stButton > button {
+        background-color: #FCA70A;
+        color: #000;
+        border-radius: 12px;
+        border: 2px solid #CC5703;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    div.stButton > button:hover {
+        background-color: #CC5703;
+        color: #FFF;
+    }
+    </style>
+""", unsafe_allow_html=True)
 st.write("👉 Preguntas rápidas:")
 col1, col2, col3 = st.columns(3)
 if col1.button("💲 ¿Precio?"):
