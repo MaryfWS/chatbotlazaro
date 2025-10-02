@@ -22,7 +22,7 @@ if "chat_history" not in st.session_state:
 SYSTEM_PROMPT = "Eres un asistente virtual amable y experto en sillas bipedestadoras eléctricas y enfermedades que requieren este tipo de dispositivo."
 
 st.title("🤖 Chatbot Lázaro - Demo")
-st.write("Hola! Soy Patri del equipo de Lázaro. Estoy aquí para ayudarte a resolver tus consultas o problemas. Dime, ¿en qué te puedo ayudar hoy?")
+st.write("Hola! Soy Patri del equipo Lázaro. Estoy aquí para ayudarte a resolver tus consultas o problemas. Dime, ¿en qué te puedo ayudar hoy?")
 
 for msg in st.session_state.chat_history:
     with st.chat_message(msg["role"]):
