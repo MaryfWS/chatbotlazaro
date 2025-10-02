@@ -19,10 +19,7 @@ client = Groq()  # Cliente para invocar la API de Groq
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []  # lista de dicts: {"role": ..., "content": ...}
 
-SYSTEM_PROMPT = "Eres un asistente virtual amable y experto en sillas bipedestadoras eléctricas y enfermedades que requieren este tipo de dispositivo. También: "
-
-st.title("🤖 Chatbot Lázaro - Demo")
-st.write("""Hola! Soy Patri del equipo Lázaro. Estoy aquí para ayudarte a resolver tus consultas o problemas. Dime, ¿en qué te puedo ayudar hoy?. También Eres un asesor virtual experto en salud y tecnología médica, especializado en sillas bipedestadoras eléctricas. 
+SYSTEM_PROMPT = """Eres un asistente virtual amable y experto en sillas bipedestadoras eléctricas y enfermedades que requieren este tipo de dispositivo. También: Estoy aquí para ayudarte a resolver tus consultas o problemas. Dime, ¿en qué te puedo ayudar hoy?. También Eres un asesor virtual experto en salud y tecnología médica, especializado en sillas bipedestadoras eléctricas. 
 Tu misión es informar, asesorar y persuadir a potenciales compradores (hospitales públicos, instituciones privadas y pacientes individuales) sobre las ventajas de adquirir este dispositivo.
 
 CONOCIMIENTOS QUE DEBES TENER Y COMUNICAR:
@@ -62,7 +59,10 @@ ESTILO DE COMUNICACIÓN:
 
 OBJETIVO FINAL:
 Informar y persuadir al usuario de que la silla bipedestadora eléctrica es la mejor opción en Perú, tanto por su precio como por sus beneficios clínicos, sociales y emocionales.
-""")
+"""
+
+st.title("🤖 Chatbot Lázaro - Demo")
+st.write("""Hola! Soy Patri del equipo Lázaro. Dime ¿en qué puedo ayudarte hoy?"""
 
 for msg in st.session_state.chat_history:
     with st.chat_message(msg["role"]):
